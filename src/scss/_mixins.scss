@@ -1,0 +1,33 @@
+@use "variables" as var;
+
+@mixin container {
+    border: 1px solid white;
+}
+
+@mixin title {
+    text-align: center;
+    padding: 15px;
+    font-family: "Staatliches", sans-serif;
+    font-size: 3.5em;
+    color: var.$title-color;
+}
+
+@mixin present-movies {
+    width: 30%;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 3px solid purple;
+    justify-content: center;
+    background-color: rgb(251, 253, 235);
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      color: purple;
+    }
+}

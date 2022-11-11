@@ -1,0 +1,75 @@
+@use "mixins";
+@use "variables" as var;
+
+body {
+  background-color: var.$bg-color;
+}
+
+.header-title {
+    @include mixins.title;
+
+    .hannah {
+        color: rgb(218, 181, 13);
+    }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+    @include mixins.present-movies;
+}
+
+.modal-content {
+  background-color: rgb(255, 253, 238);
+  border: 3px solid rgb(178, 13, 178);
+}
+.modal-header .btn-close {
+  margin: 0;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: purple;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 65%;
+    margin: 5px;
+  }
+
+  p, h6 {
+    text-align: center;
+    width: 80%;
+  }
+
+  
+}
+
+.modal-footer {
+  padding: 5;
+}
+.myButton {
+  background-color: purple;
+  color: gold;
+  border: 0;
+  padding: 10px;
+  border-radius: 20%;
+
+  &:hover {
+    background-color: rgb(178, 13, 178);
+    cursor: pointer;
+  }
+}
