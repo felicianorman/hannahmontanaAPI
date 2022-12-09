@@ -6,7 +6,7 @@ Data hämtas från omdbAPI, och filmer och serier från Hannah Montana visas. An
 
 ## Installation
 För att installera skriv
-`terminal` npm i 
+`npm i` 
 
 i din terminal.
 
